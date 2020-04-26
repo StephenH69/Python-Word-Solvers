@@ -4,32 +4,29 @@ A set of basic scripts to help solve word puzzles, including anagram solving, fi
 
 The missing letter word finder uses a classic regex algorithm which then searches a file based on the number of characters in the word.
 
-There are four methods in the anagram and word finder files, using different techniques.
 
 ### Full Word File
-This uses a text file with almost 200,000 GB English words.
+There are a mixture of a full text file of almost 200,000 GB English words and a set of files where these words have been split into separate files.
+
+This split has been derived from the larger file using the file **splitwordlist.py**.
 
 
+### Anagram Solver 
+##### anagramsolver.py
 
-### Separate Word Files
-This uses separate text files based on the length of the word which have been derived from the larger file using the file splitwordlist.py.
+This file contains the word solvers. There are 3 choices:
 
+ 1. Complete the word
+ 2. Solve the anagram
+ 3. Find all words within a character set
 
-
-
-### Enchant
-This uses the enchant package set to GB.
-
-
-
-
-
-
-### NLTK
-This uses the nltk corpus of words.
+The first option is currently open with the others commented out. 
 
 
 
 ----------
-
+### Contributions
 Willing for others to give advice on how to make these run quicker as would like to use them as the basis for a web app.
+
+
+
